@@ -83,6 +83,6 @@ class="precio-producto-carrito">$409 MXN</span>
 </div> 
 </div>
 </div>
+<script src ="index.js"></script>
 </body>
-
 </html>
