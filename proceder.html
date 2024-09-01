@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión - La librería</title>
+    <link rel="stylesheet" href="proceder.css">
+    <link rel="stylesheet" href="carrito.css">
+    <link rel="stylesheet" href="novedades.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="indexGOD.html">La librería</a>
+        </div>
+        <nav>
+            <div class="menu-item">
+                <a href="#">Imprescindibles</a>
+                <div class="submenu">
+                    <a href="novedades.html">Novedades</a>
+                    <a href="#">Más Leídos</a>
+                    <a href="#">Recomendados</a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <a href="#">Libros</a>
+                <div class="submenu">
+                    <a href="#">Ciencia y Tecnología</a>
+                    <a href="#">Estilo de Vida</a>
+                    <a href="#">Historia</a>
+                </div>
+            </div>
+            <a href="#">Conócenos</a>
+        </nav>
+        <div class="icons">
+            <a href="proceder.html" class="icon-user">👤</a>
+            <a href="carrito.html" class="icon-cart">🛒</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Sección de inicio de sesión -->
+            <section class="login-section" id="loginSection">
+                <h2>1. Tus datos</h2>
+                <form id="loginForm">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <button type="submit">Iniciar sesión</button>
+                    <button type="button" class="create-account">Crear nuevo usuario</button>
+                </form>
+            </section>
+
+            <!-- Sección del formulario de registro (oculto por defecto) -->
+            <section class="register-section" id="registerSection" style="display:none;">
+                <h2>Crear nuevo usuario</h2>
+                <form id="registerForm">
+                    <label for="first-name">Nombre:</label>
+                    <input type="text" id="first-name" name="first-name" required>
+
+                    <label for="last-name">Apellido:</label>
+                    <input type="text" id="last-name" name="last-name" required>
+
+                    <label for="new-email">Correo electrónico:</label>
+                    <input type="email" id="new-email" name="new-email" required>
+
+                    <label for="new-password">Contraseña:</label>
+                    <input type="password" id="new-password" name="new-password" required>
+
+                    <label for="confirm-password">Confirmar contraseña:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+
+                    <button type="submit">Registrarse</button>
+                    <button type="button" class="back-to-login">Volver a Iniciar Sesión</button>
+                </form>
+            </section>
+
+            <!-- Sección del método de pago -->
+            <section class="payment-section" id="paymentSection">
+                <h2>2. Método de pago</h2>
+                <form id="paymentForm">
+                    <label>
+                        <input type="radio" name="payment-method" value="tarjeta" checked>
+                        Tarjeta Bancaria
+                    </label>
+
+                    <label for="card-number">Número de tarjeta:</label>
+                    <input type="text" id="card-number" name="card-number" required>
+
+                    <label for="card-holder">Titular de la tarjeta:</label>
+                    <input type="text" id="card-holder" name="card-holder" required>
+
+                    <div class="expiration-date">
+                        <label for="month">Mes:</label>
+                        <input type="text" id="month" name="month" placeholder="MM" required>
+
+                        <label for="year">Año:</label>
+                        <input type="text" id="year" name="year" placeholder="AAAA" required>
+                    </div>
+
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" name="cvv" required>
+
+                    <div class="save-card">
+                        <label>
+                            <input type="checkbox" name="save-card">
+                            Utilizar esta tarjeta para realizar sus futuras compras más rápidamente
+                        </label>
+                    </div>
+
+                    <div class="buttons">
+                        <button type="submit">Finalizar compra</button>
+                        <button type="button">Cancelar</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>Contáctanos:</p>
+        <a href="#">Instagram</a>
+        <a href="#">WhatsApp</a>
+        <a href="#">Facebook</a>
+    </footer>
+
+    <script src="proceder.js"></script>
+</body>
+</html>
