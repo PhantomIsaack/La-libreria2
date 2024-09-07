@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión / Registrarse</title>
+    <link rel="stylesheet" href="proceder.css">
+    <link rel="stylesheet" href="carrito.css">
+    <link rel="stylesheet" href="novedades.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="ses.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="logo">
+            <a href="indexGOD.html"><h1>La librería</h1></a>
+        </div>
+        <nav>
+            <div class="menu-item">
+                <a href="#">Imprescindibles</a>
+                <div class="submenu">
+                    <a href="novedades.html">Novedades</a>
+                    <a href="#">Más Leídos</a>
+                    <a href="#">Recomendados</a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <a href="#">Libros</a>
+                <div class="submenu">
+                    <a href="#">Ciencia y Tecnología</a>
+                    <a href="#">Estilo de vida</a>
+                    <a href="#">Historia</a>
+                </div>
+            </div>
+            <a href="conocenos.html">Conócenos</a>
+            <a href="indexGOD.html">Inicio</a>
+        </nav>
+        <div class="icons">
+            <a href="ses.html" class="icon-user">👤</a>
+            <a href="carrito.html" class="icon-cart">🛒</a>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <section id="login-section">
+            <h2>Iniciar Sesión</h2>
+            <form action="inicio-sesion.html" method="post">
+                <label for="login-email">Email:</label>
+                <input type="email" id="login-email" name="email" required>
+                <label for="login-password">Contraseña:</label>
+                <input type="password" id="login-password" name="password" required>
+                <button type="submit">Iniciar Sesión</button>
+                <a href="recuperar-contrasena.html" id="forgot-password">¿Has olvidado tu contraseña?</a>
+            </form>
+        </section>
+
+        <section id="register-section">
+            <h2>Crear Cuenta</h2>
+            <p>Crea tu cuenta. Podrás usar tu email y la contraseña elegida para entrar a tu cuenta y seguir tus pedidos.</p>
+            <form action="registro-exitoso.html" method="post">
+                <label for="register-name">Nombre:</label>
+                <input type="text" id="register-name" name="name" required>
+                <label for="register-lastname">Apellidos:</label>
+                <input type="text" id="register-lastname" name="lastname" required>
+                <label for="register-email">Email:</label>
+                <input type="email" id="register-email" name="email" required>
+                <label for="register-password">Contraseña:</label>
+                <input type="password" id="register-password" name="password" required>
+                <label for="register-phone">Teléfono:</label>
+                <input type="tel" id="register-phone" name="phone" required>
+                <button type="submit">Registrarme</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <a href="#">Contáctanos</a>
+        <div class="redes-sociales">
+            <span class="icon">📷 Instagram</span>
+            <span class="icon">📱 WhatsApp</span>
+            <span class="icon">📘 Facebook</span>
+        </div>
+    </footer>
+
+    <script src="ses.js"></script>
+</body>
+</html>
