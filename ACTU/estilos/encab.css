@@ -1,0 +1,89 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+  }
+  
+  header nav a {
+    margin-right: 20px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  header .icons .icon {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  /* Estilo para el menú desplegable */
+.menu-item {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .menu-item .submenu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    color: white;
+    min-width: 160px;
+    padding: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .menu-item .submenu a {
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .menu-item .submenu a:hover {
+    background-color: #575757;
+  }
+  
+  .menu-item:hover .submenu {
+    display: block;
+  }
+  
+  /* Estilo adicional para el encabezado */
+  header nav a {
+    margin-right: 20px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  header .icons .icon {
+    width: 300px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  /* Estilo para el enlace en el encabezado */
+  header a {
+    color: inherit; /* Hereda el color del texto del elemento padre */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+  }
+  
+  /* Estilo específico para el h1 dentro del enlace en el encabezado */
+  header a h1 {
+    margin: 0; /* Asegura que no haya márgenes extra en el h1 */
+    font-size: 2rem; /* Mantiene el tamaño de fuente como antes */
+    color: white; /* Cambia el color del texto del h1 */
+  }
+  /* Estilo para el enlace en el encabezado de novedades.html */
+  header a {
+    color: inherit; /* Hereda el color del texto del elemento padre */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+  }
+  
+  /* Estilo específico para el h1 dentro del enlace en el encabezado de novedades.html */
+  header a h1 {
+    color: #fff; /* Cambia el color del texto del h1 a blanco */
+  }
+
+  /* Pie de página nuevo */
