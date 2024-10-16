@@ -1,0 +1,354 @@
+*::after,
+*::before,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1200px;
+  font-family: 'Lato', sans-serif;
+  color: #333;  
+  font-size: 16px;
+  background-color: #f8f8f8; /* Agregado desde el CSS nuevo */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #010000;
+    color: white;
+  }
+  
+  header nav {
+    display: flex;
+    align-items: center;
+}
+  
+.page-title.section-bordered {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-bottom: 2px solid #333;
+  margin-bottom: 30px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.page-title.section-bordered h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin: 0;
+}
+
+
+/* Estilo del Título de la Página */
+.page-title {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.page-title h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+}
+  
+  /* Estilo para el menú desplegable */
+.menu-item {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .menu-item .submenu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    color: white;
+    min-width: 160px;
+    padding: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .menu-item .submenu a {
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .menu-item .submenu a:hover {
+    background-color: #575757;
+  }
+  
+  .menu-item:hover .submenu {
+    display: block;
+  }
+  
+  /* Estilo adicional para el encabezado */
+  header nav a {
+    margin-right: 20px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  header .icons .icon {
+    width: 300px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  /* Estilo para el enlace en el encabezado */
+  header a {
+    color: inherit; /* Hereda el color del texto del elemento padre */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+  }
+  
+  /* Estilo específico para el h1 dentro del enlace en el encabezado */
+  header a h1 {
+    margin: 0; /* Asegura que no haya márgenes extra en el h1 */
+    font-size: 2rem; /* Mantiene el tamaño de fuente como antes */
+    color: white; /* Cambia el color del texto del h1 */
+  }
+  /* Estilo para el enlace en el encabezado de novedades.html */
+  header a {
+    color: inherit; /* Hereda el color del texto del elemento padre */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+  }
+  
+  /* Estilo específico para el h1 dentro del enlace en el encabezado de novedades.html */
+  header a h1 {
+    color: #fff; /* Cambia el color del texto del h1 a blanco */
+  }
+
+  .logo {
+    display: flex;
+    align-items: center; /* Alinea la imagen y el texto verticalmente */
+}
+
+.logo a {
+    display: flex;
+    font-weight: bold; 
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(250, 248, 248, 0.3);
+}
+
+.logo-img {
+    width: 40px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+
+/* Estilo para el botón "Apagar narrador" */
+.btn-narrador {
+  background-color: #575757; /* Color de fondo similar al menú */
+  color: white; /* Texto en blanco para que coincida con el encabezado */
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor a "pointer" cuando se pasa sobre el botón */
+  transition: background-color 0.3s ease; /* Transición suave al cambiar el color */
+  margin-left: 20px; /* Espacio a la izquierda del botón */
+}
+
+.btn-narrador:hover {
+  background-color: #333; /* Cambia el color de fondo al pasar el mouse */
+}
+
+.btn-narrador:focus {
+  outline: none; /* Quita el borde de enfoque al hacer clic */
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Agrega un sutil resplandor */
+}
+
+/* Estilos para el botón "Añadir al carrito" */
+.btn_car {
+  background-color: #4CAF50; /* Color verde */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn_car:hover {
+  background-color: #45a049; /* Verde más oscuro al hacer hover */
+}
+
+/* Estilos para el botón "Favoritos" */
+.btn_fav {
+  background-color: #FFC107; /* Color amarillo */
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn_fav:hover {
+  background-color: #e6ac00; /* Amarillo más oscuro al hacer hover */
+}
+
+
+.header-icons {
+  display: flex;
+  gap: 50px; /* la distancia*/
+}
+
+
+
+
+
+  /* Pie de página nuevo */
+
+/* Estilos generales */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+header.dark-mode {
+  background-color: #1f1f1f;
+}
+
+footer.dark-mode {
+  background-color: #1f1f1f;
+  color: #e0e0e0;
+}
+
+/* Estilo del encabezado */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #010000;
+  color: white;
+}
+
+/* Pie de página */
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #010000;
+  color: white;
+  margin-top: 20px;
+}
+
+  
+  footer a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  
+  footer .redes-sociales .icon {
+    margin-left: 10px;
+  }
+  
+  .back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 24px;
+    display: none; /* Ocultar inicialmente */
+}
+
+.back-to-top:hover {
+    background-color: #555;
+}
+
+nav ul li a img {
+  margin-right: 8px; /* Espacio entre la imagen y el texto */
+  vertical-align: middle; /* Alinea la imagen al centro del texto */
+}
+
+
+/* Dispositivos móviles (ancho máximo de 768px) */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-item {
+    width: 100%;
+  }
+
+  .menu-item .submenu {
+    position: relative;
+    width: 100%;
+  }
+
+  header .header-icons {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
+
+/* Tablets (ancho máximo de 1024px) */
+@media (max-width: 1024px) {
+  body {
+    font-size: 15px;
+  }
+
+  header {
+    padding: 10px;
+  }
+
+  .logo-img {
+    width: 35px;
+  }
+
+  .header-icons {
+    gap: 30px;
+  }
+}
+
+/* Estilos del pie de página */
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #010000;
+  color: white;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  footer {
+    text-align: left;
+    padding: 15px;
+  }
+}

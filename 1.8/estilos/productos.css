@@ -1,0 +1,114 @@
+.container {
+    width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+label {
+    width: 150px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+input, textarea {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.btn-submit {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #3e8e41;
+}
+
+.btn-delete {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.btn-edit {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.btn-delete:hover {
+    background-color: #c0392b;
+}
+
+.btn-edit:hover {
+    background-color: #3e8e41;
+}
+
+select {
+    width: 320px; /* Igual al ancho de tus inputs */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 16px;
+    appearance: none; /* Elimina el estilo por defecto del navegador */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('arrow-down-icon.png'); /* Cambia por tu propio ícono si lo deseas */
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+select:hover {
+    border-color: #4CAF50; /* Cambia el borde al pasar el ratón */
+}
+
+select:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Efecto de resplandor */
+}
+
+option {
+    padding: 10px;
+}
